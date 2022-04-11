@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/card_width"
+    android:layout_height="@dimen/card_height"
+    android:background="@drawable/rectangle_background">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/card_number_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_4dp"
+        android:textSize="@dimen/text_size_10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/card_suit_top"
+        android:layout_width="@dimen/suit_width_10dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/card_number_top"
+        app:layout_constraintStart_toEndOf="@id/card_number_top"
+        app:layout_constraintTop_toTopOf="@id/card_number_top" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/card_center_image"
+        android:layout_width="@dimen/suit_20dp"
+        android:layout_height="@dimen/suit_20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/card_number_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textSize="@dimen/text_size_10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/card_suit_bottom"
+        android:layout_width="@dimen/suit_width_10dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/card_number_bottom"
+        app:layout_constraintEnd_toStartOf="@id/card_number_bottom"
+        app:layout_constraintTop_toTopOf="@id/card_number_bottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

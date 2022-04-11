@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UserView">
+        <attr name="logo_to_load" format="reference" />
+        <attr name="show_one_more" format="boolean" />
+    </declare-styleable>
+</resources>
